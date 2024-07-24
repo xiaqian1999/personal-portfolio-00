@@ -65,39 +65,35 @@ export const Intro = styled.div`
   line-height: 18px;
 `;
 
-
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
+    padding:0 2rem
 }
 `;
-
 
 export const UtilityList = styled.ul`
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
+color: #fff;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
+background: ${({ href }) => href ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+border-radius: 50px;
 transition: 0.5s;
 &:hover{
   background: #801414;
-
 }
 `;
 
@@ -105,6 +101,9 @@ export const TagList = styled.ul`
 display: flex;
 justify-content: space-around;
 padding: 2rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+    padding:1rem;
+}
 `
 export const Tag = styled.li`
 color: #d8bfbf;

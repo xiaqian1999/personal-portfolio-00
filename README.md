@@ -1,3 +1,7 @@
 ## Personal Portfolio
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+This project is build based on the style components for the UI/UX
+
+### Tool Use
+
+- Next.js, React, Javascript, Style Components
